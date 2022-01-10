@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>목록형 태그</h1>
+    <h2>1. 순서가 있는 목록</h2>
+    <ol>
+    :오더드 리스트
+    순서가 있는 목록 안에는 리스트가 있어야 해 (단순히 번호 순서가 아니라 진짜 순서)
+        <li>웹 사이트 기획</li>
+        <li>HTML5 마크업 언어(태그를 공부함)</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    </ol>
+
+    <ol type="A">
+        <li>웹 사이트 기획</li>
+        <li>HTML5 마크업 언어</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    </ol>
+
+    <ol type="a">
+        <li>웹 사이트 기획</li>
+        <li>HTML5 마크업 언어</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    </ol>
+
+    <ol type="I">
+        <li>웹 사이트 기획</li>
+        <li>HTML5 마크업 언어</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    </ol>
+
+    <ol type="i">
+        <li>웹 사이트 기획</li>
+        <li>HTML5 마크업 언어</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    </ol>
+
+    <ol start="10">
+        <li>웹 사이트 기획</li>
+        <li>HTML5 마크업 언어</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    </ol>
+
+    <ol type="A" start="10">
+        <li>웹 사이트 기획</li>
+        <li>HTML5 마크업 언어</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    </ol>
+
+    <ol>
+        <li>웹사이트 기획</li>
+        <ol>
+            <li>요구조사</li>
+            <li>아키텍쳐 디자인</li>
+        </ol>
+        <li>HTML5 마크업 언어</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    <ol>
+        <li>웹사이트 기획</li>
+        <ul>
+            <li>요구조사:의뢰인의 요구</li>
+            <li>아키텍쳐 디자인(설계)</li>
+        </ul>
+        <li>HTML5 마크업 언어</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    </ol>
+    <h2> 2. 순서가 없는 목록</h2>
+    <div>
+       -순서가 없는 목록은 숫자 대신 블릿 기호로 나타냄 <br>
+       -type = desc, circle, squre (지정안하면 디폴트 디스크) <br>
+       -순서가 없는 목록 사용하는 때 : 메뉴 만들때 사용 (ex.메뉴 중 가방에 마우스 올리면 목록 나오는애들 (백, 클러치, 월릿...) <br>
+       -ul>li*4 탭 : ul, 자식 li 4개 만들어라
+       -스스로 자식은 다른 태그로 만듬
+    </div>
+    <ul>
+        <li>딸기</li> :ul의 첫 번째 자식/li 끼리는 형제
+        <li>복숭아</li>
+        <li>망고</li>
+        <li>감</li>
+    </ul>
+    <ul type="circle">
+        <li>딸기</li>
+        <li>복숭아</li>
+        <li>망고</li>
+        <li>감</li>
+    </ul>
+    </ul>
+    <ul type="square">
+        <li>딸기</li>
+        <li>복숭아</li>
+        <li>망고</li>
+        <li>감</li>
+    </ul>
+    
+    <ul>
+        <li>좋아하는 과일 이름</li>
+        <ul>
+            <li>딸기</li>
+            <li>복숭아</li>
+            <li>망고</li>
+            <li>감</li>
+        </ul>
+        <li>좋아하는 취미</li>
+        <ul>
+            <li>넷플릭스 앤 칠링</li>
+            <li>친구들이랑 놀기</li>
+            <li>자전거 타기</li>
+            <li>보드 타기</li>
+            <li>전시 관람</li>
+        </ul>
+        <li>좋아하는 음식</li>
+        <ul>
+            <li>한식</li>
+            <ul>
+               <li>미역국</li>
+                <li>된장찌게</li>
+            </ul>
+            <li>중식</li>
+            <ul>
+                <li>꿔바로우</li>
+                <li>깐초새우</li>
+            </ul>
+            <li>양식</li>
+            <ul>
+                <li>피자</li>
+                <li>파스타</li>
+            </ul>
+        </ul>
+        <li>좋아하는 영화</li>
+        <ul>
+            <li>스릴러</li>
+            <ul>
+                <li>지옥</li>
+            </ul>
+            <li>코미디</li>
+            <ul>
+                <li>모던패밀리</li>
+            </ul>
+            <li>애니메이션</li>
+            <ul>
+                <li>코렐라인</li>
+            </ul>
+        </ul>
+
+    </ul>
+    <h2>3.목록 타입을 표시하지 않기</h2>
+    <div>
+        - html 태그만으로는 모든 브라우저에 공통적으로 디자인 할 수 없고 (type="none 으로 하면 브라우저마다 달라 어떤 브라우저에서는 없어지고 어디선 안없어짐 ) 
+		-크로스브라우징: css 스타일(style="list-style-type:none ;)을 이용한 디자인을 한다면 대부분 브라우저에 비슷한 디자인을 적용할 수 있다. (똑같은 디자인 아님) 
+    </div>
+    <ol type="none" style="list-style-type:none;">
+        <li>웹사이트 기획</li>
+        <ol type="none" style="list-style-type:none;">
+            <li>요구조사</li>
+            <li>아키텍쳐 디자인</li>
+        </ol>
+        <li>HTML5 마크업 언어</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    </ol>
+    <ul type="none" style="list-style-type:none;">
+        <li>웹사이트 기획</li>
+        <ul type="none" style="list-style-type:none;">
+            <li>요구조사</li>
+            <li>아키텍쳐 디자인</li>
+        </ul>
+        <li>HTML5 마크업 언어</li>
+		<li>css3 디자인 언어</li>
+		<li>javascript 객체지향적 언어</li>
+		<li>jQuery 라이브러리</li>
+    </ul>
+    <h2> 4.정의형 목록타입</h2>
+    <div>
+        dl (데피니셜 리스트) <br>
+       - > : 자식 , + : 형제 <br>
+       - dl>dt+dd 탭 (dt딸, dd 아들 두 자식 있음) <br>
+       - dt 용어, dd 뒤에 해설 같이 나옴
+    </div>
+    <dl>
+        <dt>웹브라우저</dt>
+        <dd>html, css, javascript 번역하는 도구</dd>
+        <dt>웹브라우저 종류</dt>
+        <dd>크롬, 사파리, 파이어폭스, 오페라,웨일즈,스윙...</dd>
+    </dl>
+</body>
+</html>

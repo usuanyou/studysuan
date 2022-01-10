@@ -1,0 +1,97 @@
+</head>
+<body>
+    <h1> 목록형 태그</h1>
+    <h2> 순서가 있는 목록</h2> 
+    <div>
+    :ol>li 
+    :type="A,a,I,i"
+    </div>
+    <ol type="A">
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <ol start="10">
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <ol type="A" start="10">
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    </ol>
+    <ol type="none" style="list-style-type:none;">
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <ol type="A">
+        <li>1번</li>
+        <ol>
+            <li>1-1</li>
+            <li>1-2</li>
+        </ol>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <h2>2. 순서가 없는 목록</h2>
+    <div>
+        :ul>li
+        :type= desc, circle, squre 
+        :메뉴 만들 때 사용, 자식은 자동으로 다른 태그로 만들어짐
+    </div>
+    <ul type="square">
+        <li>딸기</li>
+        <li>사과</li>
+        <li>배</li>
+    </ul>
+    <ul>
+        <li>좋아하는 과일</li>
+        <ul>
+            <li>사과</li>
+            <li>배</li>
+        </ul>
+        <li>좋아하는 식사</li>
+        <ul>
+            <li>미역국</li>
+            <li>된장국</li>
+        </ul>
+        <li>좋아하는 영화</li>
+        <ul>
+            <li>코렐라인</li>
+            <li>토이스토리</li>
+        </ul>
+    </ul>
+    <ul type="none" style="list-style-type:none;">
+        <li>좋아하는 과일<li>
+        <ul type="none" style="list-style-type:none;">
+            <li>사과</li>
+            <li>배</li>
+        </ul>
+        <li>좋아하는 식사</li>
+        <ul>
+            <li>미역국</li>
+            <li>된장국</li>
+        </ul>
+        <li>좋아하는 영화</li>
+        <ul>
+            <li>코렐라인</li>
+            <li>토이스토리</li>
+        </ul>
+    </ul>
+    <h2> 3. 정의형 목록타입 </h2>
+    <div>
+        :dl 데피니셜 리스트
+       -  dl>dt+dd (>:부모 자식 +: 형제-> dl은 dt, dd 두명의 자식 있음)
+       -dt: 용어 dd: 뒤에 해설같이 나옴
+    </div>
+    <dl>
+        <dt>웹브라우저</dt>
+        <dd>html, css, javascript를 번역하는 도구</dd>
+        <dt>웹브라우저의 종류</dt>
+        <dd>크롬, 사파리, 파이어폭스, 웨일즈, 스윙..</dd>
+    </dl>
+</body>
+</html>

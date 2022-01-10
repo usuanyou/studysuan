@@ -1,0 +1,131 @@
+<html>
+<head>환경설정
+<meta charset="utf-8">
+<title>브랜드 네임</title>
+</head>
+<body>
+  
+<div>
+    1.<br> :문단 띄기
+    2. &nbsp; :한칸 띄기
+    3. &lt; &gt;
+    4. <h1> ~<h6> : 순차적으로 사용, css로 조절 가능, h1 사이트에 반드시 하나는(해더 아니더라도),검색 되길 원하는 것</h6></h1>
+    4. ! 탭 :비쥬얼 코드 단축키
+    5. 오화 옵션 방향키 : 줄 복사
+    6. <div> style="background:yellow;"</div>
+</div>
+ <header>
+     :제목, 메인배너, ()
+     <h1>로고 이미지, 로고 텍스트(텍스트는 반드시 포함 되어야 함, 챕터) </h1>
+     <nav> 검색 되야 하는 것들 , 나의 현 위치 알려주는 것</nav>
+ </header>
+ <section>
+     :콘텐츠, 퀵바, 배너, 광고 등
+     <h2> 1개 이상의 제목, 소제목</h2>
+     <div>아무내용, 레이어</div>
+     <article>따로 뺄 수 있는 주제,카테고리</article>
+     
+ </section>
+ <footer>
+     :회사 이름, 협력업체, 통판업에 반드시 명시되어야 하는 정보
+     <address>회사 주소, 연락처 </address>
+ </footer>
+</body>
+</html>
+
+1.쌍으로 이루어진 명령어 <html></html>
+단일 명령어 &nbsp; <br>
+2. display 속성 -block 속성, inline 속성
+-block 속성: 가로 전체가 칠해짐
+<p></p>
+-inline 속성 : 그 부분만 칠해짐
+<b>볼드, 두껍게 디자인만</b> <strong>두껍게, 검색됨</strong>
+<i>이탤릭체</i> 검색되는 이탤릭체
+<sub>아래첨자</sub> <sup>윗 첨자</sup>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>목록형 태그</h1>
+        <h2>1. 순서가 () 목록</h2>
+        <div>
+            -ol>li 
+            -type=A,a,I,i
+        </div>
+        <ol>
+            <li>칫솔을 꺼낸다</li>
+            <li>치약을 짠다</li>
+            <li>이빨을 닦는다</li>
+        </ol>
+        
+        <ol type="A">
+            <li>칫솔을 꺼낸다</li>
+            <li>치약을 짠다</li>
+            <li>이빨을 닦는다</li>
+        </ol>
+        <ol type="a" start="10">
+            <li>칫솔을 꺼낸다</li>
+            <li>치약을 짠다</li>
+            <li>이빨을 닦는다</li>
+        </ol>
+        <ol start="10">
+            <li>칫솔을 꺼낸다</li>
+            <li>치약을 짠다</li>
+            <li>이빨을 닦는다</li>
+        </ol>
+
+        <ol type="none" >
+            <li>칫솔을 꺼낸다</li>
+             <ol>
+                 <li>내 칫솔의 색을 기억한다</li>
+                 <li>조심히 꺼낸다</li>
+             </ol>
+            <li>치약을 짠다</li>
+            <li>이빨을 닦는다</li>
+        </ol>
+       <h2>2. 순서가 () 목록</h2>
+       <div>
+           :ul>li
+           :type= desc, circle, square
+           :()자식은 스스로 첨자 모양 바뀜 
+       </div>
+       <ul>
+           <li>좋아하는 과일</li>
+           <ul>
+               <li>사과</li>
+               <li>배</li>
+           </ul>
+           <li>좋아하는 드라마</li>
+           <ul>
+               <li>오뉴블</li>
+               <li>모던패밀리</li>
+           </ul>
+           <li>좋아하는 운동</li>
+           <ul>
+               <li>보드 타기</li>
+               <li>자전거 타기</li>
+           </ul>
+       </ul>
+       <ul type="square">
+           <li>사과</li>
+           <li>배</li>
+           <li>감</li>
+       </ul>
+       <ul type="none" style="list-style-type:none;">
+           <li>사과</li>
+           <li>배</li>
+           <li>감</li>
+       </ul>
+       <h2>정의형 목록</h2>
+       :dl>dt+dd
+       :> 부모 자식 + 형제 -dl은 dt,dd 두 자식 있음
+       :dt: 용어 dd : 뒤에 설명같이
+       <dl>
+           <dt>웹 브라우저의 정의</dt>
+           <dd>css,html,javascript 를 번역하는 도구 </dd>
+       </dl>
+    </body>
+</html>

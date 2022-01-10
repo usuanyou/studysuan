@@ -1,0 +1,181 @@
+<html>
+    <head> 환경설정
+        <title> 브랜드네임 </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        1. <br> : 한 문단 띄기
+        2. &nbsp; : 한칸 띄기
+        3. <h1> ~<h6> : 검색할 때 사용, 순차적으로 사용, css로 수정 가능, h1 반드시 하나 있어야 해</h6></h1>
+        <header>
+            :제목, 메인배너, 검색되어야 하는것
+            <h1> 로고 이미지, 텍스트, 챕터 </h1>
+        </header>
+        <section>
+            :배너, 퀵바, 콘텐츠
+            <h2>1개 이상의 제목 필요, 소제목 </h2>
+        </section>
+        <footer>
+            :회사 이름, 협력 업체, 통판업에 명시되어야 하는 것들
+        </footer>
+    </body>
+</html>
+
+<html>
+    <head> 환경설정
+        <title> 브랜드네임 </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+        console.log('vs code debug') ;
+        // 로그: 상태확인(로그인이 아님). :이 안에 자바 스크립트 코드 들어감
+        </script>
+        1. <br> : 한 문단 띄기
+        2. &nbsp; : 한칸 띄기
+        3. <h1> ~<h6> : 검색할 때 사용, 순차적으로 사용, css로 수정 가능, h1 사이트에 반드시 하나 있어야 해(해더에 아니더라도)</h6></h1>
+        4.<: &lt; >: &gt; ( 부등호는 명령어라 함부로 쓰면 안돼)
+        5. ! + 탭바 :visual code 생성 단축키
+        6. 왼화살 +옵션키 : 줄 복붙
+        7. <div style="background:skyblue;"> : 바탕색 칠하기     
+        <header>
+            :제목, 메인배너, 검색되어야 하는것
+            <h1> 로고 이미지, 텍스트, (텍스트 반드시 있어야 함, 챕터) </h1>
+            <nav> 메뉴 중 검색이 되었음 하는 것들 </nav>
+        </header>
+        <section>
+            :배너, 퀵바, 콘텐츠
+            <h2>1개 이상의 제목 필요, 소제목 </h2>
+            <div>:아무 내용 다 (포토샵 레이어) </div>
+            <article> 주제 하나로 따로 빼도 되는 내용 (카테고리 하나)
+            <figure>
+                <img src="./파일/이미지명" width="100%">
+                <img src="더미주소링크/가로/세로" alt="">
+                <img src="이미지링크" width="200" alt="설명">
+            </figure>
+            </article>
+        </section>
+        <footer>
+            :회사 이름, 협력 업체, 통판업에 명시되어야 하는 것들
+            <adress> 회사 주소, 연락처 </adress>
+        </footer>
+    </body>
+</html>
+
+# 명령어 특징, 종류
+1. 쌍으로 이루어진 명령 <html> </html> 
+단일 명령 meta, img &nbsp; 
+2.display 속성이 block 속성인 태그와 inline인 태그 
+- block 속성 : 가로로 전체 채워짐 
+<p>
+-inline 속성의 태그: 일부 부분만 그렇게 됨 (글 있는 그 부분만 그렇게 됨)
+1. <b> 진하게, bold </b> : 단순히 디자인 용도로 진하게  <strong>진하게 </strong> :검색이 되는 , 키워드가 될 단어
+3. <i> 이탤릭체</i>         <em>키워드 검색되는 이탤릭체</em>
+5. <u> 언더라인</u>  <ins>인서트라인</ins>
+8. <sup> 수학기호 같이 위해 첨자,위 설명글</sup> 9. <sub>글씨가 아래로 </sub>
+7. <mark>노란색 칠해줌</mark>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 목록형 태그</h1>
+    <h2> 순서가 있는 목록</h2> 
+    <div>
+    :ol>li 
+    :type="A,a,I,i"
+    </div>
+    <ol type="A">
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <ol start="10">
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <ol type="A" start="10">
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    </ol>
+    <ol type="none" style="list-style-type:none;">
+        <li>1번</li>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <ol type="A">
+        <li>1번</li>
+        <ol>
+            <li>1-1</li>
+            <li>1-2</li>
+        </ol>
+        <li>2번</li>
+        <li>3번</li>
+    </ol>
+    <h2>2. 순서가 없는 목록</h2>
+    <div>
+        :ul>li
+        :type= desc, circle, squre 
+        :메뉴 만들 때 사용, 자식은 자동으로 다른 태그로 만들어짐
+    </div>
+    <ul type="square">
+        <li>딸기</li>
+        <li>사과</li>
+        <li>배</li>
+    </ul>
+    <ul>
+        <li>좋아하는 과일</li>
+        <ul>
+            <li>사과</li>
+            <li>배</li>
+        </ul>
+        <li>좋아하는 식사</li>
+        <ul>
+            <li>미역국</li>
+            <li>된장국</li>
+        </ul>
+        <li>좋아하는 영화</li>
+        <ul>
+            <li>코렐라인</li>
+            <li>토이스토리</li>
+        </ul>
+    </ul>
+    <ul type="none" style="list-style-type:none;">
+        <li>좋아하는 과일<li>
+        <ul type="none" style="list-style-type:none;">
+            <li>사과</li>
+            <li>배</li>
+        </ul>
+        <li>좋아하는 식사</li>
+        <ul>
+            <li>미역국</li>
+            <li>된장국</li>
+        </ul>
+        <li>좋아하는 영화</li>
+        <ul>
+            <li>코렐라인</li>
+            <li>토이스토리</li>
+        </ul>
+    </ul>
+    <h2> 3. 정의형 목록타입 </h2>
+    <div>
+        :dl 데피니셜 리스트
+       -  dl>dt+dd (>:부모 자식 +: 형제-> dl은 dt, dd 두명의 자식 있음)
+       -dt: 용어 dd: 뒤에 해설같이 나옴
+    </div>
+    <dl>
+        <dt>웹브라우저</dt>
+        <dd>html, css, javascript를 번역하는 도구</dd>
+        <dt>웹브라우저의 종류</dt>
+        <dd>크롬, 사파리, 파이어폭스, 웨일즈, 스윙..</dd>
+    </dl>
+</body>
+</html>
